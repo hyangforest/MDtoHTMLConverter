@@ -8,7 +8,7 @@
 - .NET Framework 4.8
 - Window Forms
 - Install Nuget Packages
-  - MarkdownSharp [Nuget Package : MarkdownSharp(v2.0.5)](https://github.com/StackExchange/MarkdownSharp)
+  - [MarkdownSharp(v2.0.5)](https://github.com/StackExchange/MarkdownSharp)
 
 # 사용 아이콘
 - [아이콘 제작자: Ayub Irawan - Flaticon](https://www.flaticon.com/kr/free-icons/)
