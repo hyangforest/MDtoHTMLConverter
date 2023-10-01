@@ -21,6 +21,10 @@ namespace MDtoHTMLConverter
         string fileName, filePath = string.Empty;
         bool isInitState, isErrorText = true;
         TextBox textBox;
+
+        /// <summary>
+        /// 메시지 박스 제목 표시 유형
+        /// </summary>
         enum ProgramSatatus 
         {
             INIT,
@@ -35,6 +39,7 @@ namespace MDtoHTMLConverter
             InitProgram();
             LayoutFooter();
         }
+
         #region Method
         /// <summary>
         /// 프로그램 초기화
@@ -73,6 +78,11 @@ namespace MDtoHTMLConverter
             this.fileName = string.Empty;
         }
 
+        /// <summary>
+        /// 메시지 박스 제목 표시 메시지
+        /// </summary>
+        /// <param name="status"></param>
+        /// <returns></returns>
         private string GetMessageBoxTitle(ProgramSatatus status)
         {
             switch (status)
@@ -168,13 +178,23 @@ namespace MDtoHTMLConverter
             this.pnlFooter.Controls.Add(lblHyangforest);
         }
 
-       
+        /// <summary>
+        /// 확인 - 메시지박스
+        /// </summary>
+        /// <param name="title">메시지 상자 제목</param>
+        /// <param name="message">메시지 내용</param>
+        /// <returns></returns>
         private DialogResult ConfirmMessageBox(string title, string message) 
         {
             DialogResult result = MessageBox.Show(title, message, MessageBoxButtons.OKCancel);
             return result;
         }
 
+        /// <summary>
+        /// 알림 - 메시지박스
+        /// </summary>
+        /// <param name="title">메시지 상자 제목</param>
+        /// <param name="message">메시지 내용</param>
         private void AlertMessageBox(string title, string message)
         {
             MessageBox.Show(message, title);
@@ -197,7 +217,7 @@ namespace MDtoHTMLConverter
             e.Graphics.DrawLine(linePen, 0, 0, lineWidth, 0);
         }
         /// <summary>
-        /// Markdown 파일 업로드
+        /// Markdown 파일 선택
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -238,6 +258,11 @@ namespace MDtoHTMLConverter
             CreateTextMode(false);
         }
 
+        /// <summary>
+        /// 메뉴 스크립트 - 초기화
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void initToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult result = this.ConfirmMessageBox("초기 상태로 되돌리시겠습니까?", GetMessageBoxTitle(ProgramSatatus.INIT));
@@ -282,6 +307,11 @@ namespace MDtoHTMLConverter
             }
         }
 
+        /// <summary>
+        /// Markdown 파일 드래그 앤 다운 이벤트 시 내용 읽어오기 및 텍스트 박스 설정하기
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pnlPreview_DragDrop(object sender, DragEventArgs e)
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
@@ -312,6 +342,11 @@ namespace MDtoHTMLConverter
 
         }
 
+        /// <summary>
+        /// HTML 파일 변환하기
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnHTML_Click(object sender, EventArgs e)
         {
             if (isInitState)
