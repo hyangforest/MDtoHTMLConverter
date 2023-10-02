@@ -11,8 +11,10 @@
   - [MarkdownSharp(v2.0.5)](https://github.com/StackExchange/MarkdownSharp)
 
 # 사용 아이콘
-- 메인 아이콘 [Ayub Irawan - Flaticon](https://www.flaticon.com/kr/free-icons/)
-- 버튼 아이콘 [Material Symbols and Icons](https://fonts.google.com/icons)
+- 메인 아이콘
+  - [Ayub Irawan - Flaticon](https://www.flaticon.com/kr/free-icons/)
+- 버튼 아이콘
+  - [Material Symbols and Icons](https://fonts.google.com/icons)
 
 # 블로그
 - 
