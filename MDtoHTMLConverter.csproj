@@ -105,6 +105,9 @@
   <ItemGroup>
     <Content Include="md-html.ico" />
     <Content Include="resources\docs\design-ui.png" />
+    <Content Include="resources\docs\dev-create.png" />
+    <Content Include="resources\docs\dev-menu.png" />
+    <Content Include="resources\docs\dev-write.png" />
     <Content Include="resources\docs\function-tree-ver1.jpg" />
     <Content Include="resources\docs\function-tree-ver2.jpg" />
     <Content Include="resources\docs\plan-main.png" />
