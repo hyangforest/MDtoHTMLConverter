@@ -104,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="md-html.ico" />
+    <Content Include="resources\docs\design-ui.png" />
+    <Content Include="resources\docs\function-tree-ver1.jpg" />
+    <Content Include="resources\docs\function-tree-ver2.jpg" />
+    <Content Include="resources\docs\plan-main.png" />
+    <Content Include="resources\docs\plan-menubar.png" />
+    <Content Include="resources\docs\plan-use.png" />
     <Content Include="resources\images\main.png" />
     <Content Include="resources\images\save.png" />
     <Content Include="resources\images\select.png" />
