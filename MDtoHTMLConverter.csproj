@@ -98,6 +98,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="resources\docs\design-UI-mock-up.pptx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
